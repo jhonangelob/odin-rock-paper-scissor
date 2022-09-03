@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <title>Sandbox</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Rock Paper Scissor</h1>
+      </div>
+      <div class="scoreboard">
+        <div class="playerscore">
+          <h3>Player Score</h3>
+          <span id="playerscore">0</span>
+        </div>
+        <div class="result">
+          <h3 id="result">Result</h3>
+        </div>
+        <div class="computerscore">
+          <h3>Computer Score</h3>
+          <span id="computerscore">0</span>
+        </div>
+      </div>
+      <div class="animatepanel">
+        <div class="playerpanel">
+          <img
+            class="animatedHands"
+            id="imageP"
+            src="./images/rock.svg"
+            alt="rock"
+          />
+        </div>
+        <div class="computerpanel">
+          <img
+            class="animatedHands"
+            id="imageC"
+            src="./images/rock.svg"
+            alt="rock"
+          />
+        </div>
+      </div>
+      <div class="controls">
+        <button id="button" value="rock" onclick="playRound(this.value)">
+          <img src="./images/rock.svg" alt="rock" />Rock
+        </button>
+        <button id="button" value="scissor" onclick="playRound(this.value)">
+          <img src="./images/scissor.svg" alt="scissor" />Scissor
+        </button>
+        <button id="button" value="paper" onclick="playRound(this.value)">
+          <img src="./images/paper.svg" alt="paper" />Paper
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
